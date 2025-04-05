@@ -1,12 +1,40 @@
-# React + Vite
+# stdlib Heatmap Showcase
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project visualizes daily repository download counts using a calendar-style **heatmap** — built entirely on the frontend using React and `@stdlib` modules.
 
-Currently, two official plugins are available:
+It serves as a demonstration of how `@stdlib` can be used in frontend projects to perform statistical analysis and data visualization in a lightweight, interactive way.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## Features
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Heatmap** representing daily download counts
+- **Statistical summary** using `@stdlib/stats`:
+  - Mean (average downloads)
+  - Maximum downloads
+- **Dynamic color mapping** based on download intensity
+- Built with **React + Tailwind CSS**
+---
+
+## stdlib Modules Used
+
+- [`@stdlib/stats/base/mean`](https://www.npmjs.com/package/@stdlib/stats-base-mean) – Compute average downloads  
+- [`@stdlib/stats/base/max`](https://www.npmjs.com/package/@stdlib/stats-base-max) – Get the maximum download count  
+- [`@stdlib/array/float64`](https://www.npmjs.com/package/@stdlib/array-float64) – Efficient array for calculations  
+
+---
+
+## Screenshot
+
+<img width="997" alt="image" src="https://github.com/user-attachments/assets/dd98cc62-561d-4204-bf3e-13923354d362" />
+
+
+---
+
+## Setup
+
+```bash
+git clone https://github.com/nishant1194/stdlib-showcase.git
+cd stdlib-showcase
+npm install
+npm run dev
